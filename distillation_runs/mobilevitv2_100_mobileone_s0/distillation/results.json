@@ -1,0 +1,31 @@
+{
+  "model_type": "distillation",
+  "total_parameters": 4736712,
+  "trainable_parameters": 4736700,
+  "model_size_mb": 18.927316665649414,
+  "training_time_seconds": 1338.2709012031555,
+  "training_time_minutes": 22.30451502005259,
+  "final_weights_path": "distillation_runs/mobilevitv2_100_mobileone_s0/distillation/distillation_weights.pth",
+  "accelerated_with": {
+    "data_parallel": true,
+    "mixed_precision": true,
+    "num_gpus": 2
+  },
+  "metrics": {
+    "accuracy": 0.8966789667896679,
+    "precision": 0.9054986784910444,
+    "recall": 0.8952536314343168,
+    "f1_score": 0.8960647253103664,
+    "classification_report": "                                 precision    recall  f1-score   support\n\n               cho-noi-cai-rang     0.8980    0.9362    0.9167        94\n                           chua     0.9911    0.9487    0.9694       117\n          dieu-mua-truyen-thong     0.8351    0.9529    0.8901        85\n                  don-ca-tai-tu     0.9524    0.6977    0.8054        86\n                 dua-bo-bay-nui     1.0000    0.9643    0.9818        84\n              le-hoi-nghinh-ong     0.8784    0.9155    0.8966        71\n                   nghe-dan-tre     0.9524    0.8511    0.8989        94\n                 nghe-det-chieu     0.9091    0.8911    0.9000       101\nnghe-thuat-san-khau-du-ke-khmer     0.9681    0.9891    0.9785        92\n                      ok-om-bok     0.6452    0.8989    0.7512        89\n    phong-tuc-cuoi-truyen-thong     0.9158    0.8447    0.8788       103\n         via-ba-chua-xu-nui-sam     0.9206    0.8529    0.8855        68\n\n                       accuracy                         0.8967      1084\n                      macro avg     0.9055    0.8953    0.8961      1084\n                   weighted avg     0.9081    0.8967    0.8982      1084\n"
+  },
+  "config": {
+    "lr": 0.006073017182104416,
+    "weight_decay": 8.179499475211674e-06,
+    "optimizer": "AdamW",
+    "momentum": 0.9,
+    "alpha": 0.5198051453057903,
+    "temperature": 4.591670111852695,
+    "kan_hidden": 64,
+    "kan_grids": 6
+  }
+}

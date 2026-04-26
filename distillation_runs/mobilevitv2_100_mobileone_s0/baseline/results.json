@@ -1,0 +1,27 @@
+{
+  "model_type": "baseline",
+  "total_parameters": 4280572,
+  "trainable_parameters": 4280572,
+  "model_size_mb": 17.151531219482422,
+  "training_time_seconds": 1102.6967599391937,
+  "training_time_minutes": 18.378279332319895,
+  "final_weights_path": "distillation_runs/mobilevitv2_100_mobileone_s0/baseline/baseline_weights.pth",
+  "accelerated_with": {
+    "data_parallel": true,
+    "mixed_precision": true,
+    "num_gpus": 2
+  },
+  "metrics": {
+    "accuracy": 0.9188191881918819,
+    "precision": 0.9189140122419204,
+    "recall": 0.9183672757430825,
+    "f1_score": 0.9167995670870764,
+    "classification_report": "                                 precision    recall  f1-score   support\n\n               cho-noi-cai-rang     0.9010    0.9681    0.9333        94\n                           chua     1.0000    0.9402    0.9692       117\n          dieu-mua-truyen-thong     0.8901    0.9529    0.9205        85\n                  don-ca-tai-tu     0.9857    0.8023    0.8846        86\n                 dua-bo-bay-nui     0.9877    0.9524    0.9697        84\n              le-hoi-nghinh-ong     0.9265    0.8873    0.9065        71\n                   nghe-dan-tre     0.9091    0.8511    0.8791        94\n                 nghe-det-chieu     0.8774    0.9208    0.8986       101\nnghe-thuat-san-khau-du-ke-khmer     0.9109    1.0000    0.9534        92\n                      ok-om-bok     0.8621    0.8427    0.8523        89\n    phong-tuc-cuoi-truyen-thong     0.9412    0.9320    0.9366       103\n         via-ba-chua-xu-nui-sam     0.8354    0.9706    0.8980        68\n\n                       accuracy                         0.9188      1084\n                      macro avg     0.9189    0.9184    0.9168      1084\n                   weighted avg     0.9218    0.9188    0.9186      1084\n"
+  },
+  "config": {
+    "lr": 0.014818707979201212,
+    "weight_decay": 0.00045306289872054444,
+    "optimizer": "SGD",
+    "momentum": 0.8029630119351067
+  }
+}

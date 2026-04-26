@@ -1,0 +1,92 @@
+{
+  "teacher_name": "mobilenetv4_conv_small",
+  "student_name": "mobilenetv4_conv_small",
+  "num_classes": 12,
+  "class_names": [
+    "cho-noi-cai-rang",
+    "chua",
+    "dieu-mua-truyen-thong",
+    "don-ca-tai-tu",
+    "dua-bo-bay-nui",
+    "le-hoi-nghinh-ong",
+    "nghe-dan-tre",
+    "nghe-det-chieu",
+    "nghe-thuat-san-khau-du-ke-khmer",
+    "ok-om-bok",
+    "phong-tuc-cuoi-truyen-thong",
+    "via-ba-chua-xu-nui-sam"
+  ],
+  "timestamp": "2025-11-23 18:32:13",
+  "acceleration": {
+    "data_parallel": true,
+    "mixed_precision": true,
+    "num_gpus": 2
+  },
+  "experiments_run": {
+    "baseline": true,
+    "distillation": true
+  },
+  "baseline_results": {
+    "model_type": "baseline",
+    "total_parameters": 2508396,
+    "trainable_parameters": 2508396,
+    "model_size_mb": 9.766559600830078,
+    "training_time_seconds": 1303.204975605011,
+    "training_time_minutes": 21.720082926750184,
+    "final_weights_path": "distillation_runs/mobilenetv4_conv_small_mobilenetv4_conv_small/baseline/baseline_weights.pth",
+    "accelerated_with": {
+      "data_parallel": true,
+      "mixed_precision": true,
+      "num_gpus": 2
+    },
+    "metrics": {
+      "accuracy": 0.9197416974169742,
+      "precision": 0.9198580949973897,
+      "recall": 0.9196389147183871,
+      "f1_score": 0.9184837719949414,
+      "classification_report": "                                 precision    recall  f1-score   support\n\n               cho-noi-cai-rang     0.9082    0.9468    0.9271        94\n                           chua     1.0000    0.9573    0.9782       117\n          dieu-mua-truyen-thong     0.8889    0.9412    0.9143        85\n                  don-ca-tai-tu     0.8764    0.9070    0.8914        86\n                 dua-bo-bay-nui     1.0000    0.9643    0.9818        84\n              le-hoi-nghinh-ong     0.8816    0.9437    0.9116        71\n                   nghe-dan-tre     0.9375    0.7979    0.8621        94\n                 nghe-det-chieu     0.8800    0.8713    0.8756       101\nnghe-thuat-san-khau-du-ke-khmer     0.9583    1.0000    0.9787        92\n                      ok-om-bok     0.9114    0.8090    0.8571        89\n    phong-tuc-cuoi-truyen-thong     0.8696    0.9709    0.9174       103\n         via-ba-chua-xu-nui-sam     0.9265    0.9265    0.9265        68\n\n                       accuracy                         0.9197      1084\n                      macro avg     0.9199    0.9196    0.9185      1084\n                   weighted avg     0.9213    0.9197    0.9192      1084\n"
+    },
+    "config": {
+      "lr": 0.00023917612508591676,
+      "weight_decay": 6.9701056414128e-06,
+      "optimizer": "AdamW",
+      "momentum": 0.9
+    }
+  },
+  "distillation_results": {
+    "model_type": "distillation",
+    "total_parameters": 5484406,
+    "trainable_parameters": 5484396,
+    "model_size_mb": 21.137057304382324,
+    "training_time_seconds": 1723.2092204093933,
+    "training_time_minutes": 28.72015367348989,
+    "final_weights_path": "distillation_runs/mobilenetv4_conv_small_mobilenetv4_conv_small/distillation/distillation_weights.pth",
+    "accelerated_with": {
+      "data_parallel": true,
+      "mixed_precision": true,
+      "num_gpus": 2
+    },
+    "metrics": {
+      "accuracy": 0.8247232472324724,
+      "precision": 0.8525899067141055,
+      "recall": 0.8177621812280699,
+      "f1_score": 0.8243089930057882,
+      "classification_report": "                                 precision    recall  f1-score   support\n\n               cho-noi-cai-rang     0.7500    0.9574    0.8411        94\n                           chua     0.8209    0.9402    0.8765       117\n          dieu-mua-truyen-thong     0.8382    0.6706    0.7451        85\n                  don-ca-tai-tu     0.9016    0.6395    0.7483        86\n                 dua-bo-bay-nui     0.9875    0.9405    0.9634        84\n              le-hoi-nghinh-ong     0.9206    0.8169    0.8657        71\n                   nghe-dan-tre     0.9437    0.7128    0.8121        94\n                 nghe-det-chieu     0.5636    0.9208    0.6992       101\nnghe-thuat-san-khau-du-ke-khmer     0.9667    0.9457    0.9560        92\n                      ok-om-bok     0.8824    0.6742    0.7643        89\n    phong-tuc-cuoi-truyen-thong     0.9667    0.8447    0.9016       103\n         via-ba-chua-xu-nui-sam     0.6892    0.7500    0.7183        68\n\n                       accuracy                         0.8247      1084\n                      macro avg     0.8526    0.8178    0.8243      1084\n                   weighted avg     0.8516    0.8247    0.8269      1084\n"
+    },
+    "config": {
+      "lr": 0.00011468297264361705,
+      "weight_decay": 0.00048359527764659497,
+      "optimizer": "AdamW",
+      "momentum": 0.9,
+      "alpha": 0.5783199830488681,
+      "temperature": 7.531245410138701,
+      "kan_hidden": 512,
+      "kan_grids": 5
+    }
+  },
+  "teacher_info": {
+    "total_parameters": 2508396,
+    "trainable_parameters": 0,
+    "model_size_mb": 9.766559600830078
+  }
+}
